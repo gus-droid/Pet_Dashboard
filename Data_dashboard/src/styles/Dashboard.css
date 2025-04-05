@@ -1,0 +1,161 @@
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+  color: #666;
+  font-size: 1rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.search-input,
+.category-filter {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: white;
+  color: #333;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.search-input {
+  flex: 1;
+}
+
+.data-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.list-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.pet-info {
+  flex: 1;
+}
+
+.pet-info h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.pet-info .breed {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.pet-info .description {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.pet-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+
+.pet-details span {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.type {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.age {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.gender {
+  background: #e8f5e9;
+  color: #388e3c;
+}
+
+.pet-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: #dc3545;
+}
+
+@media (max-width: 768px) {
+  .list-item {
+    grid-template-columns: 1fr;
+  }
+
+  .pet-details {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+
+  .pet-photo {
+    width: 100%;
+    height: 200px;
+    margin-top: 1rem;
+  }
+} 
